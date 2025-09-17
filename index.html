@@ -8,22 +8,35 @@
   </head>
   <body>
     <div class="rsvp-container">
-      <h1>RSVP til festen 🎉</h1>
+      <h1>RSVP til Lars sitt 60-årslag 🎉</h1>
       <form id="rsvp-form">
-        <label for="name">Navn:</label>
+        <label for="name" class="name">Navn:</label>
         <input type="text" id="name" name="name" required>
-  
+      </br>
         <label>Kommer du?</label>
         <div class="radio-group">
-          <label><input type="radio" name="attendance" value="ja" required> Ja</label>
-          <label><input type="radio" name="attendance" value="nei"> Nei</label>
+          <label><input type="radio" name="attendance" value="ja" class="radio-btn"> Ja</label>
+          <label><input type="radio" name="attendance" value="nei" class="radio-btn"> Nei</label>
         </div>
   
-        <button type="submit">Send svar</button>
+      </br>
+
+        <button type="submit" class="svar-button">Send svar</button>
       </form>
+      
   
       <div id="response-message" class="hidden"></div>
     </div>
+<div class="hvem-kommer-kommerikke-boks">
+<div class="hvem-kommer-boks">
+    <h2>Hvem kommer😊:</h2>
+<ul id="attending-list"></ul>
+</div>
+<div class="hvem-kommer-ikke-boks">
+<h2>Hvem kommer ikke😢:</h2>
+<ul id="not-attending-list"></ul>
+</div>
+</div>
     <script src="../../public/script.js"></script>
   </body>
   </html>
