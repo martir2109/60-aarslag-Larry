@@ -42,6 +42,7 @@ h1 {
   margin-bottom: 20px;
   text-align: center;
   font-size: clamp(1.8rem, 5vw, 2rem);
+  color: black;
 }
 
 form {
