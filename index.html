@@ -14,10 +14,10 @@
 </div>
 <div class="info-box">
     <h2>Informasjon om feiringen 🎉</h2>
-    <p><strong>Dato:</strong> 20. oktober 2025</p>
-    <p><strong>Tid:</strong> 18:00 - 23:00</p>
-    <p><strong>Sted:</strong> Lars’ hus, Hovedgata 12, Oslo</p>
-    <p><strong>Kleskode:</strong> Festantrekk</p>
+    <p><strong>Dato:</strong> 13-14. juni 2026 - Lørdag til søndag</p>
+    <p><strong>Tid:</strong> 12:00</p>
+    <p><strong>Sted:</strong> Norra Edsvik 9, Sverige</p>
+    <p><strong>Kleskode:</strong> Sommerlig</p>
     <p>Vi gleder oss til å se deg! 🥳</p>
   </div>
   </div>
@@ -38,18 +38,44 @@
           <label><input type="radio" name="attendance" value="nei" class="radio-btn"> Nei</label>
         </div>
     </br>
-
+      
+    <div id="allergies-question-container">
         <label>Har du noen allergier?</label>
+    </br>
+</br>
+
+
         <div class="radio-group">
+          <label><input type="radio" name="allergies-yesno" value="ja" class="radio-btn"> Ja</label>
+          <label><input type="radio" name="allergies-yesno" value="nei" class="radio-btn"> Nei</label>
+        </div>
+      </div>
+</br>
+    <div id="allergies-container" class="hidden">
+    <label>Allergier:</label>
+<label><input type="checkbox" name="allergi" value="gluten" class="chechbox">Gluten</label>
+<label><input type="checkbox" name="allergi" value="skalldyr" class="chechbox">Skalldyr</label>
+<label><input type="checkbox" name="allergi" value="laktose" class="chechbox">Laktose</label>
+<label><input type="checkbox" name="allergi" value="egg" class="chechbox">Egg</label>
+<label><input type="checkbox" name="allergi" value="nøtteallergi" class="chechbox">Nøtteallergi</label>
+<label><input type="checkbox" name="allergi" value="fisk" class="chechbox">Fisk</label>
+</br>
+
+    <label>Annet:</label>
+      <input type="text" id="allergies" name="allergies" placeholder="Skriv allergier her...">
+    </div>
+    </br>
+
+      <button type="submit" class="svar-button">Send svar</button>  
+      <div id="response-message" class="hidden"></div>
         </div>
   
-      </br>
 
-        <button type="submit" class="svar-button">Send svar</button>
+        
       </form>
       
   
-      <div id="response-message" class="hidden"></div>
+      
     </div>
 <div class="hvem-kommer-kommerikke-boks">
 <div class="hvem-kommer-boks">

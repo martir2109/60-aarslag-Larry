@@ -15,14 +15,14 @@ let rsvpList = [];
 
 // POST endpoint for å lagre RSVP
 app.post("/api/rsvp", (req, res) => {
-  const { name, attending } = req.body;
+  const { name, attending, allergies } = req.body; // add allergies
   if (!name) {
     return res.status(400).json({ error: "Navn er påkrevd" });
   }
-  const rsvp = { name, attending };
+
+  const rsvp = { name, attending, allergies: allergies || "" };
   rsvpList.push(rsvp);
 
-  // valgfritt: lagre til fil
   fs.writeFileSync("rsvp.json", JSON.stringify(rsvpList, null, 2));
 
   res.status(201).json(rsvp);
