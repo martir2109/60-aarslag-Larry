@@ -1,5 +1,6 @@
 const form = document.getElementById("rsvp-form");
 const responseMessage = document.getElementById("response-message");
+const API_URL = "https://six0-aarslag-larry.onrender.com/api/rsvp";
 
 form.addEventListener("submit", async (e) => {
   e.preventDefault();
@@ -16,7 +17,7 @@ form.addEventListener("submit", async (e) => {
   }
 
   try {
-    const res = await fetch("http://localhost:3000/api/rsvp", {
+    const res = await fetch(API_URL, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ name, attending }),
