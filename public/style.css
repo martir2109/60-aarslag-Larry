@@ -168,7 +168,8 @@ input[type="text"] {
   margin: 20px 0;
   text-align: left;
   padding: 2rem;
-  min-height: 500px;
+  max-height: 600px;
+  height: 100%;
   display: flex;
   justify-content: center;
   justify-content: space-between;
