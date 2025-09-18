@@ -1,3 +1,11 @@
+:root {
+  --light-blue: #8ecae6;
+  --darker-blue: #219ebc;
+  --dark-blue: #023047;
+  --yellow: #ffb703;
+  --orange: #fb8500;
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   display: flex;
@@ -68,7 +76,7 @@ input[type="text"] {
 
 .svar-button {
   padding: 0.6rem;
-  background: blueviolet;
+  background-color: var(--orange);
   color: white;
   border: none;
   border-radius: 8px;
@@ -78,7 +86,7 @@ input[type="text"] {
 }
 
 .svar-button:hover {
-  background: #45a049;
+  background: var(--dark-blue);
 }
 
 .hidden {
@@ -116,9 +124,16 @@ input[type="text"] {
   gap: 10px;
 }
 
+.hvem-kommer-boks {
+  width: 45%;
+  background-color: rgba(82, 150, 52, 0.25);
+  padding: 10px;
+  border-radius: 10px;
+}
+
 .hvem-kommer-ikke-boks {
   width: 45%;
-  background-color: rgb(172, 172, 172, 0.3);
+  background-color: rgb(255, 183, 3, 0.25);
   padding: 10px;
   border-radius: 10px;
 }
