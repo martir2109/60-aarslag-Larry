@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../public/style.css" />
+    <link rel="stylesheet" href="../public/countdown.css" />
+
     <title>Larry 60 årslag</title>
   </head>
   <body>
@@ -27,6 +29,17 @@
     <div class="rsvp-container">
       <h1>Kommer du til Lars sitt 60-årslag?</h1>
     </br>
+
+    <div class="countdown">
+        <h2>Frist for å svare</h2>
+        <div id="timer">
+          <span id="days">00</span>d :
+          <span id="hours">00</span>t :
+          <span id="minutes">00</span>m :
+          <span id="seconds">00</span>s
+        </div>
+        <p>S.U. innen: 1. Januar 2026</p>
+      </div>
 
       <form id="rsvp-form">
         <label for="name" class="name">Navn:</label>
@@ -94,6 +107,8 @@
 </div>
     <script src="../../public/script.js"></script>
     <script src="fireworks.js"></script>
+    <script src="nedtelling.js"></script>
+
   </body>
   </html>
 </html>
