@@ -137,6 +137,7 @@ input[type="text"] {
 .info-container {
   width: 100%;
   max-width: 600px;
+  height: fit-content;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -152,6 +153,11 @@ input[type="text"] {
   margin: 20px 0;
   text-align: left;
   padding: 2rem;
+  min-height: 500px;
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .info-box h2 {
@@ -179,6 +185,10 @@ input[type="text"] {
 .form-container {
   position: relative;
   z-index: 1;
+}
+
+.title-container {
+  margin-bottom: 20px;
 }
 
 #allergies-container.hidden {

@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../public/style.css" />
     <link rel="stylesheet" href="../public/countdown.css" />
+    <link rel="stylesheet" href="../public/invitation.css" />
+
 
     <title>Larry 60 årslag</title>
   </head>
@@ -15,14 +17,26 @@
     <h1>Du er invitert til Lars sitt 60-årslag 🎉</h1>
 </div>
 <div class="info-box">
-    <h2>Informasjon om feiringen 🎉</h2>
-    <p><strong>Dato:</strong> 13-14. juni 2026 - Lørdag til søndag</p>
-    <p><strong>Tid:</strong> 12:00</p>
-    <p><strong>Sted:</strong> Norra Edsvik 9, Sverige</p>
-    <p><strong>Kleskode:</strong> Sommerlig / etter været</p>
-    <p>Vi gleder oss til å se deg! 🥳</p>
+    <div class="envelope-wrapper">
+        <div class="envelope">
+          <div class="flap"></div>
+          <div class="body"></div>
+          <div class="letter">
+            <h2>Informasjon om feiringen 🎉</h2>
+            <p><strong>Dato:</strong> 13-14. juni 2026 - Lørdag til søndag</p>
+            <p><strong>Tid:</strong> 12:00</p>
+            <p><strong>Sted:</strong> Norra Edsvik 9, Sverige</p>
+            <p><strong>Kleskode:</strong> Sommerlig / etter været</p>
+  </br>
+
+            <p class="text">Vi gleder oss til å se deg! 🥳</p>
+          </div>
+        </div>
+        <button id="open-envelope">Åpne konvolutt</button>
+      </div>
   </div>
   </div>
+
   
   </br>
     <div class="form-container">
@@ -108,6 +122,8 @@
     <script src="../../public/script.js"></script>
     <script src="fireworks.js"></script>
     <script src="nedtelling.js"></script>
+    <script src="invitation.js"></script>
+
 
   </body>
   </html>
