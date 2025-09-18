@@ -24,6 +24,7 @@ document.addEventListener(
     music.muted = false;
     music.play();
     message.style.display = "none";
+    icon.className = "bi bi-pause-circle-fill";
   },
   { once: true }
 );
