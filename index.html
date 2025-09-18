@@ -19,7 +19,7 @@
     <div class="title-container">
     <h1>Du er invitert til Lars sitt 60-årslag 🎉</h1>
 </div>
-<audio id="background-music" autoplay loop muted>
+<audio id="background-music" autoplay muted>
     <!-- https://pixabay.com/music/search/waiting/ -->
     <source src="../music/waiting-music-116216.mp3" type="audio/mpeg">
   Your browser does not support the audio element.
@@ -39,11 +39,12 @@
             <h2>Informasjon om feiringen 🎉</h2>
             <p><strong>Dato:</strong> 13-14. juni 2026 - Lørdag til søndag</p>
             <p><strong>Tid:</strong> 12:00</p>
-            <p><strong>Sted:</strong> Norra Edsvik 9, Sverige</p>
+            <p><strong>Sted:</strong> Norra Edsvik 9 &#40;Grebbestad, Sverige&#41;</p>
             <p><strong>Kleskode:</strong> Sommerlig / etter været</p>
   </br>
 
-            <p class="text">Vi gleder oss til å se deg! 🥳</p>
+
+            <p class="text" id="animated-text"></p>
           </div>
         </div>
         <button id="open-envelope">Åpne konvolutt</button>
@@ -129,9 +130,7 @@
     <script src="nedtelling.js"></script>
     <script src="invitation.js"></script>
     <script src="music.js"></script>
-    
-
-
+    <script src="wavy-text.js"></script>
   </body>
   </html>
 </html>
