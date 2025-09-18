@@ -3,8 +3,7 @@ function updateText(text) {
 
   let p = document.getElementById("animated-text");
 
-  p.innerHTML = text
-    .split("")
+  p.innerHTML = Array.from(text)
     .map((letter) => {
       console.log(letter);
       return `<span>` + letter + `</span>`;
