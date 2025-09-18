@@ -1,10 +1,17 @@
 const openEnvelopeButton = document.getElementById("open-envelope");
 const envelope = document.querySelector(".envelope");
 
-openEnvelopeButton.addEventListener("click", () => {
+// Function to toggle envelope open/close
+function toggleEnvelope() {
   envelope.classList.toggle("open");
-  openEnvelopeButton.classList.toggle("active"); // toggle button state
+  openEnvelopeButton.classList.toggle("active");
   openEnvelopeButton.textContent = envelope.classList.contains("open")
     ? "Lukk konvolutt"
     : "Åpne konvolutt";
-});
+}
+
+// Button click
+openEnvelopeButton.addEventListener("click", toggleEnvelope);
+
+// Envelope click
+envelope.addEventListener("click", toggleEnvelope);
