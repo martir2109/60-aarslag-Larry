@@ -68,8 +68,13 @@ input[type="text"] {
   border: 1px solid #ccc;
   height: 32px;
 }
+.radio-group {
+  display: flex;
+  gap: 20px;
+}
 
-.radio-btn {
+.radio-btn,
+.chechbox {
   width: 20px;
   height: 20px;
 }
