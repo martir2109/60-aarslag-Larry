@@ -184,6 +184,7 @@ input[type="text"] {
   justify-content: center;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 
 .info-box h2 {
@@ -293,6 +294,17 @@ input[type="text"] {
   }
   100% {
     top: 0px;
+  }
+}
+
+@keyframes float {
+  from {
+    transform: translateY(100vh);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-300vh);
+    opacity: 0;
   }
 }
 
